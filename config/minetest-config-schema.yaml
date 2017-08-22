@@ -1,0 +1,36 @@
+"$schema": "http://json-schema.org/draft-04/schema#"
+type: "object"
+properties:
+  homeserver:
+    type: "object"
+    properties:
+      domain:
+        type: "string"
+      url:
+        type: "string"
+      mediaUrl:
+        type: "string"
+  web:
+    type: "object"
+    properties:
+      bind:
+        type: "string"
+      port:
+        type: "integer"
+      hookUrlBase:
+        type: "string"
+  users:
+    type: "object"
+    properties:
+      prefix:
+        type: "string"
+
+  webhookBot:
+    type: "object"
+    properties:
+      userName:
+        type: "string"
+      displayName:
+        type: "string"
+      avatarUrl:
+        type: "string"

@@ -1,0 +1,6 @@
+*.db
+config.yaml
+minetest-registration.yaml
+logs
+*.log
+node_modules

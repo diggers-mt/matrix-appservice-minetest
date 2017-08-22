@@ -1,0 +1,24 @@
+{
+  "name": "matrix-appservice-minetest",
+  "version": "0.0.1",
+  "description": "A Matrix <-> Minetest bridge",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joenas/matrix-appservice-minetest.git"
+  },
+  "keywords": [
+    "matrix",
+    "minetest"
+  ],
+  "author": "joenas",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/matrix-org/matrix-appservice-minetest/issues"
+  },
+  "homepage": "https://github.com/matrix-org/matrix-appservice-minetest#readme",
+  "dependencies": {
+    "matrix-appservice-bridge": "^1.4.0",
+    "matrix-js-sdk": "^0.5"
+  }
+}

@@ -1,0 +1,23 @@
+# Configuration specific to the application service. All fields (unless otherwise marked) are required.
+homeserver:
+  # The domain for the client-server API calls.
+  url: "http://localhost:8008"
+
+  # The domain part for user IDs on this home server. Usually, but not always, this is the same as the
+  # home server's URL.
+  domain: "localhost"
+
+users:
+  prefix: "mt_"
+
+# Configuration specific to the bridge. All fields (unless otherwise marked) are required.
+webhookBot:
+  userName: "minetestbot"
+  displayName: "Minetest Bridge"
+  roomId: "!someid:localhost"
+
+# Configuration related to the web portion of the bridge. Handles the inbound webhooks
+web:
+  hookUrlBase: 'http://localhost:9898/'
+  bind: '0.0.0.0'
+  port: 9898
