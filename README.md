@@ -1,7 +1,11 @@
 # matrix-appservice-minetest
-A Matrix - Minetest bridge
+A very simple Matrix - Minetest bridge
 
-Very simple bridge for Minetest.
+On the Minetest side you need the [minetest-matrix](https://github.com/diggers-mt/minetest-matrix) mod, using the `appservice` branch. You also need to create a user for the mod, to listen for messages on the Matrix side since this appservice can't send messages **to** Minetest.
+
+The appservice accepts webhooks **from** Matrix, creates virtual users from the Minetest ones and displays join/leave/chat messages.
+
+The code is pieced together from `matrix-appservice-bridge` [HOWTO](https://github.com/matrix-org/matrix-appservice-bridge/blob/master/HOWTO.md), [matrix-appservice-slack](https://github.com/matrix-org/matrix-appservice-slack) and the config from [matrix-appservice-webhooks](https://github.com/turt2live/matrix-appservice-webhooks). Probably room for some improvement to feel free!
 
 Installation
 ------------
