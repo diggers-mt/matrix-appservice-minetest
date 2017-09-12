@@ -1,12 +1,18 @@
 FROM node:8.4.0
 
-RUN mkdir /src
+RUN mkdir /app
+WORKDIR /app
 
-WORKDIR /src
-ADD package.json /src/package.json
-RUN npm install
+# See http://jdlm.info/articles/2016/03/06/lessons-building-node-app-docker.html
+# and https://github.com/dockersamples/example-voting-app/blob/7629961971ab5ca9fdfeadff52e7127bd73684a5/result-app/Dockerfile#L8
+
+ADD package.json /app/package.json
+RUN npm install && npm ls
+RUN mv /app/node_modules /node_modules
+
+ADD . /app
 
 EXPOSE 9000
-EXPOSE 9898
 
-CMD node app.js -p 9000 -c config/config.yaml
+ENTRYPOINT ["node", "app.js"]
+CMD ["-p", "9000", "-c", "config/config.yaml"]

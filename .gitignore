@@ -4,3 +4,5 @@ minetest-registration.yaml
 logs
 *.log
 node_modules
+docker-compose.yaml
+docker-compose.yml
