@@ -19,7 +19,7 @@
   "homepage": "https://github.com/matrix-org/matrix-appservice-minetest#readme",
   "dependencies": {
     "acorn": "^6.4.1",
-    "matrix-appservice-bridge": "^1.12.2",
+    "matrix-appservice-bridge": "^2.6.1",
     "matrix-js-sdk": "^0.5"
   }
 }
